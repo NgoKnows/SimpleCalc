@@ -43,7 +43,7 @@ func avg(vals: Array<String>) {
 
 func fact(vals: Array<String>) {
     var total = 1
-    if Int(vals[0]) < 0 {
+    if Int(vals[0])! > 0 {
         for val in 1...Int(vals[0])! {
             total = total * val
         }
